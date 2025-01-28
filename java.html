@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل تعلم لغة جافا من الصفر إلى الاحتراف</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    h2, h3 {
+      color: #0072ff;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+    .code-block {
+      background-color: #eef;
+      border-left: 5px solid #0072ff;
+      padding: 15px;
+      font-family: 'Courier New', monospace;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+    ul, ol {
+      padding-left: 30px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>تعلم لغة جافا من الصفر إلى الاحتراف</h1>
+  <p>الدليل الكامل لدخول عالم البرمجة الاحترافية مع لغة جافا.</p>
+</header>
+
+<div class="container">
+  <h2>مرحباً بك في عالم جافا</h2>
+  <p>
+    لغة جافا هي واحدة من أشهر لغات البرمجة وأكثرها استخدامًا في العالم. منذ إطلاقها في منتصف التسعينات، أصبحت جافا الخيار الأول للمبرمجين لتطوير التطبيقات المتعددة الأنظمة. 
+    في هذا الدليل، سنأخذك في رحلة شاملة تغطي أساسيات اللغة وأهم مفاهيمها حتى المشاريع المتقدمة.
+  </p>
+
+  <h2>ما هي لغة جافا؟</h2>
+  <p>
+    لغة جافا هي لغة برمجة كائنية التوجه (Object-Oriented Programming) تم تصميمها لتكون سهلة الاستخدام ومتعددة المنصات. 
+    أحد أبرز مميزات جافا أنها تتمتع بشعار "Write Once, Run Anywhere"، بمعنى أن الكود المكتوب على منصة واحدة يمكن تشغيله على أي منصة أخرى تدعم Java Virtual Machine (JVM). 
+  </p>
+
+  <h2>لماذا يجب عليك تعلم جافا؟</h2>
+  <p>هناك العديد من الأسباب التي تجعل تعلم جافا خطوة ذكية:</p>
+  <ul>
+    <li><strong>التعددية:</strong> تُستخدم جافا في العديد من المجالات مثل تطوير تطبيقات الأندرويد، برمجة الألعاب، أنظمة المؤسسات، وحتى في تقنيات الذكاء الاصطناعي.</li>
+    <li><strong>الاستمرارية:</strong> منذ إطلاقها وحتى اليوم، ما زالت جافا من بين اللغات الأكثر طلبًا في سوق العمل.</li>
+    <li><strong>المجتمع الضخم:</strong> بفضل المجتمع الكبير لمبرمجي جافا، ستجد الكثير من الموارد والدعم لحل أي مشكلة قد تواجهها.</li>
+    <li><strong>سهولة التعلم:</strong> جافا لغة مرنة وواضحة، وهي خيار مثالي للمبتدئين.</li>
+  </ul>
+
+  <h2>المفاهيم الأساسية التي سنتعلمها</h2>
+  <p>هذا الدليل مصمم ليأخذك من الصفر إلى الاحتراف. ستتعلم:</p>
+  <ol>
+    <li><strong>أساسيات اللغة:</strong> المتغيرات، الأنواع، العمليات، والدوال.</li>
+    <li><strong>الحلقات والشروط:</strong> التحكم في تدفق البرنامج باستخدام الحلقات والشروط.</li>
+    <li><strong>البرمجة الكائنية:</strong> إنشاء الكائنات والفئات والعمل معها.</li>
+    <li><strong>إدارة الأخطاء:</strong> تعلم كيفية التعامل مع الأخطاء باستخدام Exception Handling.</li>
+    <li><strong>مشاريع عملية:</strong> إنشاء تطبيقات عملية لتطبيق كل ما تعلمته.</li>
+  </ol>
+
+  <h2>تحميل أدوات التطوير</h2>
+  <p>للبدء في تعلم جافا، ستحتاج إلى:</p>
+  <ol>
+    <li><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">تحميل JDK</a>: بيئة التطوير اللازمة لكتابة وتشغيل كود جافا.</li>
+    <li>تنزيل بيئة تطوير مثل IntelliJ IDEA أو Eclipse أو VS Code مع إضافة Java Extension Pack.</li>
+    <li>ضبط البيئة وكتابة أول كود بسيط.</li>
+  </ol>
+
+  <h2>مثال عملي: أول برنامج لك</h2>
+  <p>هذا هو أول برنامج ستكتبه في جافا. يقوم البرنامج بطباعة رسالة على الشاشة:</p>
+  <div class="code-block">
+    <code>
+      public class Main { <br>
+      &nbsp;&nbsp;public static void main(String[] args) { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("مرحباً بك في عالم جافا!"); <br>
+      &nbsp;&nbsp;} <br>
+      }
+    </code>
+  </div>
+  <p>لحفظ وتشغيل هذا البرنامج:</p>
+  <ol>
+    <li>افتح محرر نصوص مثل Notepad++ أو بيئة تطوير.</li>
+    <li>احفظ الملف باسم <strong>Main.java</strong>.</li>
+    <li>افتح Terminal أو Command Prompt واكتب:
+      <div class="code-block">
+        javac Main.java <br>
+        java Main
+      </div>
+    </li>
+  </ol>
+
+  <h2>فيديو: تعلم جافا خطوة بخطوة بالعربي</h2>
+  <p>شاهد هذا الفيديو التفصيلي لتعلم أساسيات جافا باللغة العربية:</p>
+  <iframe 
+    <iframe src="https://www.youtube.com/embed/3nZBgDCd-IE?autoplay=1" title="كورس جافا بالعربي" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+  <h2>خطواتك القادمة</h2>
+  <p>بعد تعلم الأساسيات، يمكنك الانتقال إلى:</p>
+  <ul>
+    <li>تعلم كيفية إنشاء تطبيقات أندرويد باستخدام Android Studio.</li>
+    <li>فهم البرمجة المتزامنة (Multithreading) في جافا.</li>
+    <li>استكشاف مكتبات متقدمة مثل Hibernate وSpring Framework.</li>
+  </ul>
+
+  <h2>نصائح هامة للمبتدئين</h2>
+  <ul>
+    <li>تعلم الأساسيات بشكل جيد قبل الانتقال إلى المواضيع المتقدمة.</li>
+    <li>قم بكتابة الأكواد بنفسك بدلاً من مجرد نسخها.</li>
+    <li>لا تخف من ارتكاب الأخطاء، فهي جزء من عملية التعلم.</li>
+    <li>حاول العمل على مشاريع صغيرة لتطبيق ما تعلمته.</li>
+  </ul>
+
+  <h2>خاتمة</h2>
+  <p>تعلم لغة جافا سيفتح أمامك العديد من الفرص في عالم البرمجة. التزم بالممارسة اليومية واستفد من الموارد المتاحة. لا تنس أن التعلم عملية مستمرة، وكل يوم هو فرصة جديدة لتطوير مهاراتك.</p>
+</div>
+
+<footer>
+  <p>© 2025 شبكة المزعجين - . بالتوفيق للجميع!</p>
+</footer>
+
+</body>
+</html>

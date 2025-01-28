@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تعلم بايثون من الصفر للاحتراف</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(90deg, #4caf50, #8bc34a);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    h2, h3 {
+      color: #4caf50;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .code-block {
+      background-color: #f4f4f4;
+      border-left: 5px solid #4caf50;
+      padding: 10px;
+      font-family: 'Courier New', monospace;
+      margin: 10px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>تعلم بايثون من الصفر للاحتراف</h1>
+  <p>شبكة المزعجين: ابدأ رحلتك مع البرمجة بسهولة وبأسلوب ممتع!</p>
+</header>
+
+<div class="container">
+  <h2>أهلاً بيك في كورس بايثون الشامل</h2>
+  <p>يا باشا، لو عمرك ما برمجت قبل كده أو لو عندك خلفية بسيطة وعايز تتعلم بجد، الكورس ده ليك. في الكورس ده هنتعلم كل حاجة عن لغة بايثون: من الأساسيات لحد الاحتراف. مش بس كده، كمان هتعرف إزاي تكتب سكربتات وتشغلها وتتعامل مع المشاريع زي المحترفين.</p>
+
+  <h2>يعني إيه بايثون؟ وليه أتعلمها؟</h2>
+  <p>بايثون يا نجم هي لغة برمجة سهلة أوي ومشهورة جدًا. ليه؟ لأنها بتستخدم في كل حاجة تقريبًا:</p>
+  <ul>
+    <li>برمجة المواقع.</li>
+    <li>الذكاء الاصطناعي (AI) والتعلم الآلي (Machine Learning).</li>
+    <li>تحليل البيانات.</li>
+    <li>تصميم الألعاب.</li>
+    <li>كتابة سكربتات أوتوماتيكية.</li>
+  </ul>
+  <p>وبتتميز إنها سهلة القراءة والكتابة، فمش هتحتاج تكون عبقري علشان تبدأ.</p>
+
+  <h2>هنتعلم إيه في الكورس ده؟</h2>
+  <ol>
+    <li><strong>أساسيات اللغة:</strong> إزاي تكتب أول برنامج ليك؟ يعني مثلاً برنامج "Hello, World!".</li>
+    <li><strong>المتغيرات:</strong> إزاي تخزن البيانات وتستخدمها.</li>
+    <li><strong>الحلقات (Loops):</strong> لو عايز تكرر حاجة أكتر من مرة.</li>
+    <li><strong>الدوال (Functions):</strong> إزاي تكتب أكواد منظمة وسهلة التعديل.</li>
+    <li><strong>التعامل مع الملفات:</strong> إزاي تقرأ وتكتب ملفات باستخدام بايثون.</li>
+    <li><strong>المكتبات:</strong> زي Numpy وPandas وMatplotlib لتحليل البيانات.</li>
+    <li><strong>مشروع كامل:</strong> هنكتب سكربت بايثون يحل مشكلة معينة وهنشغله.</li>
+  </ol>
+
+  <h2>أول خطوة: شغل بايثون على جهازك</h2>
+  <p>علشان تبدأ، لازم تنزل بايثون على جهازك:</p>
+  <ol>
+    <li>روح لموقع <a href="https://www.python.org/downloads/" target="_blank">python.org</a>.</li>
+    <li>نزل النسخة المناسبة لنظام التشغيل بتاعك (Windows، Mac، Linux).</li>
+    <li>بعد التنصيب، افتح الـ <strong>Terminal</strong> أو <strong>Command Prompt</strong> واكتب:
+      <div class="code-block">
+        python --version
+      </div>
+      <p>لو ظهرت النسخة يبقى كله تمام!</p>
+    </li>
+  </ol>
+
+  <h2>مشروع صغير: برنامج آلة حاسبة</h2>
+  <p>هنكتب برنامج آلة حاسبة بسيط جداً:</p>
+  <div class="code-block">
+    <code>
+      def calculator():<br>
+      &nbsp;&nbsp;num1 = float(input("أدخل الرقم الأول: "))<br>
+      &nbsp;&nbsp;operation = input("أدخل العملية (+, -, *, /): ")<br>
+      &nbsp;&nbsp;num2 = float(input("أدخل الرقم الثاني: "))<br>
+      &nbsp;&nbsp;if operation == "+":<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("النتيجة:", num1 + num2)<br>
+      &nbsp;&nbsp;elif operation == "-":<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("النتيجة:", num1 - num2)<br>
+      &nbsp;&nbsp;elif operation == "*":<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("النتيجة:", num1 * num2)<br>
+      &nbsp;&nbsp;elif operation == "/":<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("النتيجة:", num1 / num2)<br>
+      &nbsp;&nbsp;else:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("عملية غير صحيحة")<br>
+      <br>
+      calculator()
+    </code>
+  </div>
+  <p>جرب تكتب الكود ده على جهازك، وقلنا النتيجة.</p>
+
+  <h2>كورس فيديو: تعلم بايثون من الصفر للاحتراف</h2>
+  <p>هنا كورس كامل يعلمك بايثون بالعربي خطوة بخطوة. اضغط تشغيل وتابع:</p>
+<iframe src="https://www.youtube.com/embed/smKHKgedkP4?autoplay=1" 
+        title="كورس تعلم بايثون" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+</iframe>
+
+
+  <h2>شكراً ليك</h2>
+  <p>نورت موقعنا، ونتمنى لك رحلة تعليم ممتعة مع بايثون. لو عندك أي استفسار، ابعتلنا!</p>
+</div>
+
+<footer>
+  <p>© 2025 شبكة المزعجين - بالتوفيق!</p>
+</footer>
+
+</body>
+</html>
+
+

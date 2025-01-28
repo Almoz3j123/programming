@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شبكة المزعجين - قسم البرمجة</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(90deg, #8B0000, #00b4db); /* أحمر غامق إلى أزرق */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #00334e;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+    nav ul li a:hover {
+      background-color: #00a4d3;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .container h2 {
+      text-align: center;
+      color: #00334e;
+      margin-bottom: 30px;
+    }
+    .languages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .language-card {
+      background-color: #e9f5fb;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .language-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .language-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .language-card h3 {
+      margin: 10px 0;
+      color: #00334e;
+      font-size: 1.2rem;
+    }
+    .language-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .language-card a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #00416d;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .language-card a:hover {
+      background-color: #007bbd;
+    }
+    footer {
+      background-color: #00334e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>شبكة المزعجين</h1>
+  <p>أول شبكة مصرية تقوم بتعليم المجال خطوة بخطوة</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#languages">أقسام اللغات</a></li>
+    <li><a href="https://t.me/Z_Y_Y_S" target="_blank">اتصل بنا</a></li>
+    <li><a href="about.html" target="_blank">عن الموقع</a></li>
+  </ul>
+</nav>
+
+<div class="container" id="languages">
+  <h2>أقسام لغات البرمجة</h2>
+  <div class="languages-grid">
+    <div class="language-card">
+      <img src="https://via.placeholder.com/100" alt="Python">
+      <h3>تعليم لغة بايثون</h3>
+      <p>عن طريق هذا القسم سوف تتعلم بايثون بكل سهولة.</p>
+      <a href="python.html">ابدأ التعلم</a>
+    </div>
+    <div class="language-card">
+      <img src="https://via.placeholder.com/100" alt="Java">
+      <h3>تعليم لغة جافا</h3>
+      <p>يجب عليك تعلمها للاستفادة من مميزات الجافا.</p>
+      <a href="java.html">ابدأ التعلم</a>
+    </div>
+    <div class="language-card">
+      <img src="https://via.placeholder.com/100" alt="HTML">
+      <h3>تعليم لغة HTML</h3>
+      <p>لغة تستخدم في تصميم المواقع والألعاب.</p>
+      <a href="html.html">ابدأ التعلم</a>
+    </div>
+    <div class="language-card">
+      <img src="https://via.placeholder.com/100" alt="C++">
+      <h3>تعليم لغة C++</h3>
+      <p>تعلم لغة C++ بكل سهولة مع شبكة المزعجين.</p>
+      <a href="++c.html">ابدأ التعلم</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 شبكة المزعجين - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
+
